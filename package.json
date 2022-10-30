@@ -1,6 +1,18 @@
 {
-  "name": "fcc-solidity-ts",
+  "type": "module",
+  "name": "fcc_hardhat",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "fs-extra": "^10.1.0",
+    "solc": "0.8.17"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
+    "test": "hardhat test",
+    "start": "node deploy.js"
+  }
 }
