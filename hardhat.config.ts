@@ -6,7 +6,7 @@ import '@typechain/hardhat';
 
 import './tasks/block-number';
 
-import { GOERLI_URL_ALCHEMY, META_PK1, ETHERSCAN_API_KEY, GAS_REPORTER_ENABLED, CMC_API } from './VARS';
+import { GOERLI_URL_ALCHEMY, META_PK1, ETHERSCAN_API_KEY, GAS_REPORTER_ENABLED, CMC_API } from './config/VARS';
 
 const config: HardhatUserConfig = {
   solidity: '0.8.17',
