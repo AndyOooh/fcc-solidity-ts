@@ -39,8 +39,8 @@ describe('SimpleStorage', () => {
     const { name, favoriteNumber } = await simpleStorage.people(0);
     console.log('🚀 ~ file: test-deploy.ts ~ line 39 ~ favoriteNumber', typeof favoriteNumber)
     // assert.lengthOf(simpleStorage.people, 1); // Can't return entire array from auto-getters. This is to prevent high gas costs. INstead create a function that returns the entire array in the contract.
-    // assert.equal(name, expectedName);
-    // assert.equal(favoriteNumber, expectedFavoriteNumber);
+    assert.equal(name, expectedName);
+    assert.equal(favoriteNumber, expectedFavoriteNumber);
 
     // const nameToFavoriteNumber = await simpleStorage.nameToFavoriteNumber();
     // console.log('🚀 ~ file: test-deploy.ts ~ line 41 ~ nameToFavoriteNumber', nameToFavoriteNumber)
